@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/c2fBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/celsius_to_fahrenheit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2c_btn" />
+
+    <Button
+        android:id="@+id/f2c_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="82dp"
+        android:text="@string/fahrenheit_to_celsius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_edt" />
+
+    <EditText
+        android:id="@+id/input_edt"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="92dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+
+        android:minHeight="48dp"
+        android:text="@string/enternumbers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_tv" />
+
+    <TextView
+        android:id="@+id/output_tv"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/outputtextview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
